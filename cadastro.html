@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html style="color:brown;">
+ <head>
+   <title>Cadastro de Eventos</title>
+
+   <script type="text/javascript">
+
+    var nomeEvento = prompt("Digite um nome pra o seu evento: ");
+    
+    var nome = prompt("Informe o seu Nome: ");
+
+    var idade = prompt("Informe a sua idade: ");
+
+    var NParticipantes = prompt("Informe o numero de participantes: ");
+
+    var dataEvento = prompt("Qual data gostaria de realizar o evento? ");
+
+    var now = new Date;
+    
+
+    if(idade < 18){
+    
+        alert("Idade minima nao permitida!");
+      
+    }else if(NParticipantes > 100){
+
+      alert("Numero de participantes excedeu o limite!");
+    }
+    else if(dataEvento < now){
+      alert("Data do evento inválida");
+    }
+    
+    else{
+      alert("Cadastro realizado com sucesso!");
+}
+</script>
+
+ </head>
+</html>
